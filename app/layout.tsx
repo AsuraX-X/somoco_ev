@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/General/Header";
 import localFont from "next/font/local";
+import Footer from "@/components/General/Footer";
 
 const ceraPro = localFont({
   src: [
     {
-      path: "../public/cera-pro/Fontspring-DEMO-cerapro-regular.otf",
+      path: "../public/cera-pro/Cera-Pro-Regular.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/cera-pro/Fontspring-DEMO-cerapro-medium.otf",
+      path: "../public/cera-pro/Cera-Pro-Medium.otf",
       weight: "500",
       style: "normal",
     },
   ],
-  variable: "--font-cera-pro"
+  variable: "--font-cera-pro",
 });
 
 const ceraStencil = localFont({
@@ -32,7 +33,7 @@ const ceraStencil = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-cera-stencil"
+  variable: "--font-cera-stencil",
 });
 
 export const metadata: Metadata = {
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body className={`${ceraPro.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Specs = () => {
   return (
-    <div className="h-screen bg-cover flex items-start sm:items-end bg-center bg-[url(/BYD/2-banner.jpg)] sm:bg-[url(/BYD/seagull.jpg)] flex justify-center text-secondary">
+    <div className="h-screen bg-cover flex items-start sm:items-end bg-center bg-[url(/BYD/2-banner.jpg)] sm:bg-[url(/BYD/seagull.jpg)] flex justify-center text-secondary snap-center relative z-[1]">
       <div className=" flex justify-center  px-4 pt-20 sm:py-10 divide-x-2 divide-secondary w-full">
         <div className="flex flex-col justify-center items-center flex-1 px-2 md:px-8">
           <h1 className="font-family-cera-stencil text-2xl md:text-4xl text-center ">

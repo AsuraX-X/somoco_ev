@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 472 131">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Degradado_sin_nombre_73);
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        mix-blend-mode: overlay;
+      }
+
+      .st0, .st1, .st7, .st8 {
+        opacity: .48;
+      }
+
+      .st1 {
+        fill: url(#Degradado_sin_nombre_75);
+      }
+
+      .st2 {
+        fill: url(#Degradado_sin_nombre_74);
+      }
+
+      .st2, .st4 {
+        opacity: .14;
+      }
+
+      .st3 {
+        fill: url(#Degradado_sin_nombre_81);
+      }
+
+      .st3, .st5 {
+        opacity: .25;
+      }
+
+      .st4 {
+        fill: url(#Degradado_sin_nombre_71);
+      }
+
+      .st10 {
+        fill: url(#Degradado_sin_nombre_11);
+      }
+
+      .st11 {
+        fill: url(#Degradado_sin_nombre_4);
+      }
+
+      .st12 {
+        fill: url(#Degradado_sin_nombre_111);
+      }
+
+      .st5 {
+        fill: url(#Degradado_sin_nombre_83);
+      }
+
+      .st13 {
+        fill: url(#Degradado_sin_nombre_41);
+      }
+
+      .st14 {
+        isolation: isolate;
+      }
+
+      .st6 {
+        fill: url(#Degradado_sin_nombre_82);
+      }
+
+      .st6, .st9 {
+        opacity: .47;
+      }
+
+      .st7 {
+        fill: url(#Degradado_sin_nombre_72);
+      }
+
+      .st8 {
+        fill: url(#Degradado_sin_nombre_7);
+      }
+
+      .st9 {
+        fill: url(#Degradado_sin_nombre_8);
+      }
+
+      .st15 {
+        display: none;
+        fill: gray;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-size: 14.75px;
+        font-weight: 600;
+        letter-spacing: .15em;
+      }
+
+      .st16 {
+        fill: #2c2d32;
+        font-family: CeraStencil-Bold, 'Cera Stencil';
+        font-size: 56.4px;
+        font-weight: 700;
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_11" data-name="Degradado sin nombre 11" x1="-85.12" y1="274.98" x2="-138.08" y2="199.04" gradientTransform="translate(272.05 161.15) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8104"/>
+      <stop offset="1" stop-color="#ffc933"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_111" data-name="Degradado sin nombre 11" x1="-148.6" y1="214.84" x2="-92.56" y2="155.81" xlink:href="#Degradado_sin_nombre_11"/>
+    <linearGradient id="Degradado_sin_nombre_8" data-name="Degradado sin nombre 8" x1="-135.94" y1="225.16" x2="-138.37" y2="195.27" gradientTransform="translate(272.05 161.15) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_7" data-name="Degradado sin nombre 7" x1="-149.51" y1="213.62" x2="-93.65" y2="154.78" gradientTransform="translate(272.05 161.15) rotate(90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_71" data-name="Degradado sin nombre 7" x1="-113.99" y1="178.16" x2="-103.76" y2="171.11" xlink:href="#Degradado_sin_nombre_7"/>
+    <linearGradient id="Degradado_sin_nombre_81" data-name="Degradado sin nombre 8" x1="-120.13" y1="220.62" x2="-111.91" y2="260.04" xlink:href="#Degradado_sin_nombre_8"/>
+    <linearGradient id="Degradado_sin_nombre_72" data-name="Degradado sin nombre 7" x1="-117.53" y1="277.4" x2="-121.67" y2="226.41" xlink:href="#Degradado_sin_nombre_7"/>
+    <linearGradient id="Degradado_sin_nombre_4" data-name="Degradado sin nombre 4" x1="369.37" y1="160.92" x2="316.4" y2="84.98" gradientTransform="translate(-27.8 425.61) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#282ab3"/>
+      <stop offset="1" stop-color="#0087cd"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_41" data-name="Degradado sin nombre 4" x1="305.88" y1="100.78" x2="361.93" y2="41.75" xlink:href="#Degradado_sin_nombre_4"/>
+    <linearGradient id="Degradado_sin_nombre_82" data-name="Degradado sin nombre 8" x1="318.54" y1="111.1" x2="316.11" y2="81.2" gradientTransform="translate(-27.8 425.61) rotate(-90)" xlink:href="#Degradado_sin_nombre_8"/>
+    <linearGradient id="Degradado_sin_nombre_73" data-name="Degradado sin nombre 7" x1="304.98" y1="99.56" x2="360.83" y2="40.72" gradientTransform="translate(-27.8 425.61) rotate(-90)" xlink:href="#Degradado_sin_nombre_7"/>
+    <linearGradient id="Degradado_sin_nombre_74" data-name="Degradado sin nombre 7" x1="340.49" y1="64.1" x2="350.72" y2="57.05" gradientTransform="translate(-27.8 425.61) rotate(-90)" xlink:href="#Degradado_sin_nombre_7"/>
+    <linearGradient id="Degradado_sin_nombre_83" data-name="Degradado sin nombre 8" x1="334.36" y1="106.56" x2="342.58" y2="145.97" gradientTransform="translate(-27.8 425.61) rotate(-90)" xlink:href="#Degradado_sin_nombre_8"/>
+    <linearGradient id="Degradado_sin_nombre_75" data-name="Degradado sin nombre 7" x1="336.96" y1="163.34" x2="332.81" y2="112.35" gradientTransform="translate(-27.8 425.61) rotate(-90)" xlink:href="#Degradado_sin_nombre_7"/>
+  </defs>
+  <g class="st14">
+    <g id="Layer_1">
+      <g>
+        <g>
+          <path class="st10" d="M56.86,66.62l-2.25-.83-19.46-7.22-23.58-8.75,14.28-24.74c.5-.87,1.11-1.67,1.8-2.38h0c1.79-1.87,4.15-3.12,6.71-3.54.67-.12,1.36-.18,2.04-.18h24.19c-1.15.67-2.08,1.64-2.73,2.76-.64,1.12-1,2.42-1,3.75v41.13Z"/>
+          <path class="st12" d="M65.27,26.42c-2.82-3.14-7.94-1.37-8.38,2.66,0,.01-.01.01,0,.02-.01.13-.02.27-.02.4v-4.01c0-2.68,1.42-5.16,3.73-6.51h16.72c4.36,0,8.38,2.33,10.57,6.1l5.06,8.77,15.4,26.67c2.17,3.78,2.17,8.43,0,12.21l-.57.99-16.41-18.25-26.09-29.03Z"/>
+          <path class="st9" d="M56.86,29.51v-4.01c0-2.68,1.42-5.16,3.73-6.51h8.82c-11.04,1.88-12.39,8.17-12.53,10.1,0,.01-.01.01,0,.02-.02.18-.02.31-.02.4Z"/>
+          <path class="st8" d="M73.12,19.12c4.36,0,8.38,2.33,10.57,6.1l20.46,35.43c1.78,3.09,2.08,6.76.94,10.06l2.69,2.99.57-.99c2.17-3.78,2.17-8.43,0-12.21l-20.46-35.43c-2.19-3.77-6.21-6.1-10.57-6.1h-16.72c-.07.04-.14.1-.21.14h12.73Z"/>
+          <path class="st4" d="M107.78,73.7l-16.41-18.25c3.25-5.51,2.87-14.13,1.58-21.61l15.4,26.67c2.17,3.78,2.17,8.43,0,12.21l-.57.99Z"/>
+          <path class="st3" d="M54.61,65.79l-43.04-15.97,14.28-24.74c1.83-3.17,4.97-5.32,8.52-5.92-1.26,12.7,2.17,29.47,20.24,46.63Z"/>
+          <path class="st7" d="M35.15,58.57l-23.58-8.75,14.28-24.74c.5-.87,1.11-1.67,1.8-2.38l-10.68,25.37,18.18,10.5Z"/>
+        </g>
+        <g>
+          <path class="st11" d="M73.33,65.66l2.25.83,19.46,7.22,23.58,8.75-14.28,24.74c-.5.87-1.11,1.67-1.8,2.38h0c-1.79,1.87-4.15,3.12-6.71,3.54-.67.12-1.36.18-2.04.18h-24.19c1.15-.67,2.08-1.64,2.73-2.76.64-1.12,1-2.42,1-3.75v-41.13Z"/>
+          <path class="st13" d="M64.92,105.85c2.82,3.14,7.94,1.37,8.38-2.66,0-.01.01-.01,0-.02.01-.13.02-.27.02-.4v4.01c0,2.68-1.42,5.16-3.73,6.51h-16.72c-4.36,0-8.38-2.33-10.57-6.1l-5.06-8.77-15.4-26.67c-2.17-3.78-2.17-8.43,0-12.21l.57-.99,16.41,18.25,26.09,29.03Z"/>
+          <path class="st6" d="M73.33,102.77v4.01c0,2.68-1.42,5.16-3.73,6.51h-8.82c11.04-1.88,12.39-8.17,12.53-10.1,0-.01.01-.01,0-.02.02-.18.02-.31.02-.4Z"/>
+          <path class="st0" d="M57.07,113.16c-4.36,0-8.38-2.33-10.57-6.1l-20.46-35.43c-1.78-3.09-2.08-6.76-.94-10.06l-2.69-2.99-.57.99c-2.17,3.78-2.17,8.43,0,12.21l20.46,35.43c2.19,3.77,6.21,6.1,10.57,6.1h16.72c.07-.04.14-.1.21-.14h-12.73Z"/>
+          <path class="st2" d="M22.42,58.57l16.41,18.25c-3.25,5.51-2.87,14.13-1.58,21.61l-15.4-26.67c-2.17-3.78-2.17-8.43,0-12.21l.57-.99Z"/>
+          <path class="st5" d="M75.58,66.49l43.04,15.97-14.28,24.74c-1.83,3.17-4.97,5.32-8.52,5.92,1.26-12.7-2.17-29.47-20.24-46.63Z"/>
+          <path class="st1" d="M95.04,73.7l23.58,8.75-14.28,24.74c-.5.87-1.11,1.67-1.8,2.38l10.68-25.37-18.18-10.5Z"/>
+        </g>
+      </g>
+      <g>
+        <text class="st16" transform="translate(120.47 85.01)"><tspan x="0" y="0">SOMOCO EV</tspan></text>
+        <text class="st15" transform="translate(189.39 110.73)"><tspan x="0" y="0">TAGLINE GOES HERE</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

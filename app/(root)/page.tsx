@@ -1,15 +1,15 @@
-import Details from "@/components/Details";
-import Hero from "@/components/Hero";
-import Specs from "@/components/Specs";
+import Details from "@/components/Home/Details";
+import Hero from "@/components/Home/Hero";
+import Specs from "@/components/Home/Specs";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="w-full overflow-x-hidden">
-      <Hero />
-      <Specs />
-      <Details />
-    </div>
+      <div>
+        <Hero />
+        <Specs />
+        <Details />
+      </div>
   );
 };
 

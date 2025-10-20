@@ -4,6 +4,20 @@
   --font-family-cera-pro: var(--font-cera-pro);
   --font-family-cera-stencil: var(--font-cera-stencil);
   --color-primary: #0039a6;
-  --color-secondary: #001E60;
-  
+  --color-secondary: #001e60;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbars */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

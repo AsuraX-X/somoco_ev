@@ -30,7 +30,7 @@ const Specifications = () => {
               Basic
               <motion.button
                 animate={{ rotate: a ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setA(!a)}
                 className="cursor-pointer"
               >
@@ -94,7 +94,7 @@ const Specifications = () => {
               Performance
               <motion.button
                 animate={{ rotate: b ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setB(!b)}
                 className="cursor-pointer"
               >
@@ -202,7 +202,7 @@ const Specifications = () => {
               Braking and Suspension
               <motion.button
                 animate={{ rotate: c ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setC(!c)}
                 className="cursor-pointer"
               >
@@ -249,7 +249,7 @@ const Specifications = () => {
               Safety
               <motion.button
                 animate={{ rotate: d ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setD(!d)}
                 className="cursor-pointer"
               >
@@ -335,7 +335,7 @@ const Specifications = () => {
               Driving Assistance
               <motion.button
                 animate={{ rotate: e ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setE(!e)}
                 className="cursor-pointer"
               >
@@ -377,7 +377,7 @@ const Specifications = () => {
               Exterior
               <motion.button
                 animate={{ rotate: f ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setF(!f)}
                 className="cursor-pointer"
               >
@@ -417,7 +417,7 @@ const Specifications = () => {
               Interior
               <motion.button
                 animate={{ rotate: g ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setG(!g)}
                 className="cursor-pointer"
               >
@@ -472,7 +472,7 @@ const Specifications = () => {
               Seat
               <motion.button
                 animate={{ rotate: h ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setH(!h)}
                 className="cursor-pointer"
               >
@@ -523,7 +523,7 @@ const Specifications = () => {
               Infotainment
               <motion.button
                 animate={{ rotate: i ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setI(!i)}
                 className="cursor-pointer"
               >
@@ -557,7 +557,7 @@ const Specifications = () => {
               Light
               <motion.button
                 animate={{ rotate: j ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setJ(!j)}
                 className="cursor-pointer"
               >
@@ -606,7 +606,7 @@ const Specifications = () => {
               Glass/Rearview mirror
               <motion.button
                 animate={{ rotate: k ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setK(!k)}
                 className="cursor-pointer"
               >
@@ -647,7 +647,7 @@ const Specifications = () => {
               New Energy Features
               <motion.button
                 animate={{ rotate: l ? 225 : 0 }}
-                transition={{  type: "spring",stiffness:200, damping:15 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
                 onClick={() => setL(!l)}
                 className="cursor-pointer"
               >

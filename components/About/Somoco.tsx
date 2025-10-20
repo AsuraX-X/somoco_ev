@@ -49,9 +49,9 @@ const Somoco = () => {
       >
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            Somoco Ghana Limited is a trusted partner to the world's leading
+            Somoco Ghana Limited is a trusted partner to the world&apos;s leading
             automobile manufacturers, including <strong>Bajaj Auto</strong>, the
-            World's No.1 and largest 3-wheeler manufacturer, and now{" "}
+            World&apos;s No.1 and largest 3-wheeler manufacturer, and now{" "}
             <strong>BYD</strong>, one of the global pioneers in electric vehicle
             innovation.
           </p>
@@ -96,7 +96,7 @@ const Somoco = () => {
             rickshaws to West Africa.
           </p>
           <p className="text-sm opacity-90">
-            World's #1 3-Wheeler Manufacturer
+            World&apos;s #1 3-Wheeler Manufacturer
           </p>
         </motion.div>
 
@@ -120,7 +120,7 @@ const Somoco = () => {
             Partnering with BYD to introduce the Seagull - a modern, efficient,
             fully electric vehicle for sustainable transportation.
           </p>
-          <p className="text-sm opacity-90">World's Leading EV Manufacturer</p>
+          <p className="text-sm opacity-90">World&apos;s Leading EV Manufacturer</p>
         </motion.div>
       </div>
 
@@ -148,7 +148,7 @@ const Somoco = () => {
             </h2>
             <p className="text-lg leading-relaxed">
               As Somoco expands into the future of mobility, we are proud to
-              partner with BYD (Build Your Dreams), the world's leading new
+              partner with BYD (Build Your Dreams), the world&apos;s leading new
               energy vehicle manufacturer, to introduce the BYD Seagull.
             </p>
             <p className="text-lg leading-relaxed">
@@ -276,7 +276,7 @@ const Somoco = () => {
               Automotive Future
             </h2>
             <p className="text-xl opacity-90">
-              With BYD's cutting-edge electric mobility solutions
+              With BYD&apos;s cutting-edge electric mobility solutions
             </p>
           </div>
         </div>

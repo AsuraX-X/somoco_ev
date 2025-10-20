@@ -447,10 +447,10 @@ const Specifications = () => {
               <span className="font-family-cera-stencil">)</span>
             </li>
             <li className="py-2 px-4 flex justify-start w-full">
-              Driver's sun visor with makeup mirror and lighting
+              Driver&apos;s sun visor with makeup mirror and lighting
             </li>
             <li className="py-2 px-4 flex justify-start w-full">
-              Front passenger's sun visor with makeup mirror and lighting
+              Front passenger&apos;s sun visor with makeup mirror and lighting
             </li>
             <li className="py-2 px-4 flex justify-start w-full">
               Electronic gear shifting
@@ -623,7 +623,7 @@ const Specifications = () => {
               Four door power windows
             </li>
             <li className="py-2 px-4 flex justify-start w-full">
-              Driver's window with one
+              Driver&apos;s window with one
               <span className="font-family-cera-stencil">-</span>click lifting
               and anti<span className="font-family-cera-stencil">-</span>pinch
             </li>

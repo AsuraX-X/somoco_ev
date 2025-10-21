@@ -11,31 +11,21 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isBlueBg, setIsBlueBg] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [showModelsDropdown, setShowModelsDropdown] = useState(false);
-  const [showMobileModels, setShowMobileModels] = useState(false);
+  const [showBrandsDropdown, setShowBrandsDropdown] = useState(false);
+  const [showBYDDropdown, setShowBYDDropdown] = useState(false);
+  const hideDropdownTimeout = React.useRef<number | null>(null);
+  const [showMobileBrands, setShowMobileBrands] = useState(false);
+  const [showMobileBYD, setShowMobileBYD] = useState(false);
   const pathname = usePathname();
-
-  let hoverTimeout: NodeJS.Timeout;
-
-  const handleMouseEnter = () => {
-    clearTimeout(hoverTimeout);
-    setShowModelsDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    hoverTimeout = setTimeout(() => {
-      setShowModelsDropdown(false);
-    }, 300); // 300ms delay
-  };
 
   useEffect(() => {
     // Reset to default when pathname changes
     setIsBlueBg(false);
     setHasScrolled(false);
-    setShowModelsDropdown(false);
-    setShowMobileModels(false);
+    setShowBrandsDropdown(false);
+    setShowBYDDropdown(false);
+    setShowMobileBrands(false);
     setIsOpen(false);
-    clearTimeout(hoverTimeout);
 
     const handleScroll = () => {
       // Check scroll position for the specific scroll container or window
@@ -85,12 +75,22 @@ const Header = () => {
     console.log(isOpen);
   }, [isOpen]);
 
+  // Clear any pending hide timeout when component unmounts
+  useEffect(() => {
+    return () => {
+      if (hideDropdownTimeout.current) {
+        window.clearTimeout(hideDropdownTimeout.current);
+        hideDropdownTimeout.current = null;
+      }
+    };
+  }, []);
+
   return (
     <div className="fixed top-0 left-0 right-0 z-10">
       <div className="hidden md:block relative">
         <div
           className={`flex justify-between items-center px-6 py-8 transition-all duration-300 ${
-            isBlueBg || hasScrolled || showModelsDropdown
+            isBlueBg || hasScrolled
               ? "text-white bg-primary"
               : "text-primary bg-gradient-to-b from-[#ffffff70] to-transparent"
           }`}
@@ -100,9 +100,7 @@ const Header = () => {
               <Image
                 unoptimized
                 src={
-                  isBlueBg || hasScrolled || showModelsDropdown
-                    ? "/LogoIconAlt.svg"
-                    : "/LogoIcon.svg"
+                  isBlueBg || hasScrolled ? "/LogoIconAlt.svg" : "/LogoIcon.svg"
                 }
                 height={40}
                 width={40}
@@ -120,42 +118,127 @@ const Header = () => {
             <Link href={"/about-us"}>
               <button className="cursor-pointer">About Us</button>
             </Link>
-            <div
-              className="relative"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <motion.button className="cursor-pointer flex items-center gap-1">
-                Models <ChevronDown size={20} />
+            <div className="relative">
+              <motion.button
+                onHoverStart={() => {
+                  // Clear any pending hide timeout and show dropdown immediately
+                  if (hideDropdownTimeout.current) {
+                    window.clearTimeout(hideDropdownTimeout.current);
+                    hideDropdownTimeout.current = null;
+                  }
+                  // reset nested submenu state when opening brands
+                  setShowBYDDropdown(false);
+                  setShowBrandsDropdown(true);
+                }}
+                onHoverEnd={() => {
+                  // Start a managed timeout that can be cleared if user re-enters
+                  if (hideDropdownTimeout.current) {
+                    window.clearTimeout(hideDropdownTimeout.current);
+                  }
+                  hideDropdownTimeout.current = window.setTimeout(() => {
+                    setShowBrandsDropdown(false);
+                    hideDropdownTimeout.current = null;
+                  }, 500);
+                }}
+                className="cursor-pointer flex items-center gap-1"
+              >
+                Brands <ChevronDown size={20} />
               </motion.button>
+
+              {/* Brands Dropdown */}
+              {showBrandsDropdown && (
+                <motion.div
+                  className="absolute top-full left-0 mt-2 bg-white text-primary shadow-lg rounded-md min-w-[150px] overflow-hidden"
+                  onHoverStart={() => {
+                    // Keep open while hovering dropdown
+                    if (hideDropdownTimeout.current) {
+                      window.clearTimeout(hideDropdownTimeout.current);
+                      hideDropdownTimeout.current = null;
+                    }
+                    setShowBrandsDropdown(true);
+                  }}
+                  onHoverEnd={() => {
+                    // Start hide timeout when leaving dropdown
+                    if (hideDropdownTimeout.current) {
+                      window.clearTimeout(hideDropdownTimeout.current);
+                    }
+                    hideDropdownTimeout.current = window.setTimeout(() => {
+                      setShowBrandsDropdown(false);
+                      hideDropdownTimeout.current = null;
+                    }, 500);
+                  }}
+                >
+                  <div className="relative">
+                    <motion.div
+                      className="px-4 py-3 hover:bg-gray-100 cursor-pointer flex items-center justify-between"
+                      onHoverStart={() => {
+                        // hovering BYD menu item - show BYD models and clear any hide timeout
+                        if (hideDropdownTimeout.current) {
+                          window.clearTimeout(hideDropdownTimeout.current);
+                          hideDropdownTimeout.current = null;
+                        }
+                        setShowBYDDropdown(true);
+                      }}
+                      onHoverEnd={() => {
+                        // start shared hide timeout so both dropdowns close together
+                        if (hideDropdownTimeout.current) {
+                          window.clearTimeout(hideDropdownTimeout.current);
+                        }
+                        hideDropdownTimeout.current = window.setTimeout(() => {
+                          setShowBYDDropdown(false);
+                          setShowBrandsDropdown(false);
+                          hideDropdownTimeout.current = null;
+                        }, 500);
+                      }}
+                    >
+                      <span>BYD</span>
+                      <ChevronRight size={20} />
+                    </motion.div>
+
+                    {/* BYD Models Dropdown */}
+                    {showBYDDropdown && (
+                      <motion.div
+                        className="bg-white text-primary rounded-md"
+                        onHoverStart={() => {
+                          // entering the nested submenu should keep everything open
+                          if (hideDropdownTimeout.current) {
+                            window.clearTimeout(hideDropdownTimeout.current);
+                            hideDropdownTimeout.current = null;
+                          }
+                          setShowBrandsDropdown(true);
+                          setShowBYDDropdown(true);
+                        }}
+                        onHoverEnd={() => {
+                          // start shared hide timeout when leaving nested submenu
+                          if (hideDropdownTimeout.current) {
+                            window.clearTimeout(hideDropdownTimeout.current);
+                          }
+                          hideDropdownTimeout.current = window.setTimeout(
+                            () => {
+                              setShowBYDDropdown(false);
+                              setShowBrandsDropdown(false);
+                              hideDropdownTimeout.current = null;
+                            },
+                            500
+                          );
+                        }}
+                      >
+                        <Link href={"/byd-seagull"}>
+                          <div className="px-4 py-3 hover:bg-gray-100 cursor-pointer">
+                            BYD SEAGULL
+                          </div>
+                        </Link>
+                      </motion.div>
+                    )}
+                  </div>
+                </motion.div>
+              )}
             </div>
             <Link href={"/contact"}>
               <button className="cursor-pointer">Contact Us</button>
             </Link>
           </div>
         </div>
-        {/* Dropdown expanding from bottom */}
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{
-            height: showModelsDropdown ? "auto" : 0,
-            opacity: showModelsDropdown ? 1 : 0,
-          }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="overflow-hidden bg-primary text-white"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="border-t-2 border-white">
-            <div className="px-6 py-4">
-              <Link href={"/byd-seagull"}>
-                <button className="w-full text-left hover:opacity-80 transition-opacity font-family-cera-stencil text-lg">
-                  BYD SEAGULL
-                </button>
-              </Link>
-            </div>
-          </div>
-        </motion.div>
       </div>
       <div className="block md:hidden">
         <div className="w-full flex justify-end ">
@@ -187,7 +270,7 @@ const Header = () => {
             transition={{ ease: "linear" }}
             className="bg-primary w-75  px-6 pt-4 relative"
           >
-            {!showMobileModels ? (
+            {!showMobileBrands ? (
               <>
                 <div className="font-family-cera-stencil font-bold text-4xl flex justify-between items-center">
                   <Link href={"/"}>
@@ -203,7 +286,7 @@ const Header = () => {
                     </div>
                   </Link>
                   <button onClick={() => setIsOpen(false)}>
-                    <X size={35} />
+                    <X size={30} />
                   </button>
                 </div>
                 <div className="flex items-start flex-col mt-8 text-2xl divide-y-2 divide-white">
@@ -217,15 +300,47 @@ const Header = () => {
                   </Link>
                   <button
                     className="w-full text-left py-4 flex items-center justify-between"
-                    onClick={() => setShowMobileModels(true)}
+                    onClick={() => setShowMobileBrands(true)}
                   >
-                    Models <ChevronRight size={24} />
+                    Brands <ChevronRight size={30} />
                   </button>
                   <Link className="w-full" href={"/contact"}>
                     <button className=" text-left py-4">Contact Us</button>
                   </Link>
                 </div>
               </>
+            ) : !showMobileBYD ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="w-full h-full"
+              >
+                <div className="font-family-cera-stencil font-bold text-4xl flex justify-between items-center">
+                  <button
+                    onClick={() => setShowMobileBrands(false)}
+                    className="flex items-center gap-2"
+                  >
+                    <ChevronDown size={30} className="rotate-90" />
+                    <h1 className="text-2xl">Brands</h1>
+                  </button>
+                  <button
+                    onClick={() => {
+                      setIsOpen(false);
+                      setShowMobileBrands(false);
+                    }}
+                  >
+                    <X size={30} />
+                  </button>
+                </div>
+                <div className="flex items-start flex-col mt-8 text-2xl">
+                  <button
+                    className="w-full text-left py-4 flex items-center justify-between"
+                    onClick={() => setShowMobileBYD(true)}
+                  >
+                    BYD <ChevronRight size={30} />
+                  </button>
+                </div>
+              </motion.div>
             ) : (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -234,19 +349,20 @@ const Header = () => {
               >
                 <div className="font-family-cera-stencil font-bold text-4xl flex justify-between items-center">
                   <button
-                    onClick={() => setShowMobileModels(false)}
+                    onClick={() => setShowMobileBYD(false)}
                     className="flex items-center gap-2"
                   >
-                    <ChevronDown size={35} className="rotate-90" />
-                    <h1 className="text-2xl">Models</h1>
+                    <ChevronDown size={30} className="rotate-90" />
+                    <h1 className="text-2xl">BYD</h1>
                   </button>
                   <button
                     onClick={() => {
                       setIsOpen(false);
-                      setShowMobileModels(false);
+                      setShowMobileBrands(false);
+                      setShowMobileBYD(false);
                     }}
                   >
-                    <X size={35} />
+                    <X size={30} />
                   </button>
                 </div>
                 <div className="flex items-start flex-col mt-8 text-2xl">

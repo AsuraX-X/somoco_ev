@@ -49,9 +49,9 @@ const Somoco = () => {
       >
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            Somoco Ghana Limited is a trusted partner to the world&apos;s
+            Somoco Ghana Limited is a trusted partner to the world's
             leading automobile manufacturers, including{" "}
-            <strong>Bajaj Auto</strong>, the World&apos;s No.1 and largest
+            <strong>Bajaj Auto</strong>, the World's No.1 and largest
             3-wheeler manufacturer, and now <strong>BYD</strong>, one of the
             global pioneers in electric vehicle innovation.
           </p>
@@ -96,7 +96,7 @@ const Somoco = () => {
             rickshaws to West Africa.
           </p>
           <p className="text-sm opacity-90">
-            World&apos;s #1 3-Wheeler Manufacturer
+            World's #1 3-Wheeler Manufacturer
           </p>
         </motion.div>
 
@@ -121,7 +121,7 @@ const Somoco = () => {
             fully electric vehicle for sustainable transportation.
           </p>
           <p className="text-sm opacity-90">
-            World&apos;s Leading EV Manufacturer
+            World's Leading EV Manufacturer
           </p>
         </motion.div>
       </div>
@@ -150,7 +150,7 @@ const Somoco = () => {
             </h2>
             <p className="text-lg leading-relaxed">
               As Somoco expands into the future of mobility, we are proud to
-              partner with BYD (Build Your Dreams), the world&apos;s leading new
+              partner with BYD (Build Your Dreams), the world's leading new
               energy vehicle manufacturer, to introduce the BYD Seagull.
             </p>
             <p className="text-lg leading-relaxed">
@@ -278,7 +278,7 @@ const Somoco = () => {
               Automotive Future
             </h2>
             <p className="text-xl opacity-90">
-              With BYD&apos;s cutting-edge electric mobility solutions
+              With BYD's cutting-edge electric mobility solutions
             </p>
           </div>
         </div>

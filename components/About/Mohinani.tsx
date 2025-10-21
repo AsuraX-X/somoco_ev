@@ -45,7 +45,7 @@ const Mohinani = () => {
               Mohinani Group
             </h1>
             <p className="text-xl md:text-2xl max-w-2xl">
-              Building Tomorrow&apos;s Africa, Today
+              Building Tomorrow's Africa, Today
             </p>
           </div>
         </div>
@@ -320,9 +320,9 @@ const Mohinani = () => {
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <div className="text-white px-8 text-center max-w-4xl space-y-4">
             <p className="text-xl md:text-3xl italic leading-relaxed">
-              &ldquo;Through common alignment on these values as an
+              "Through common alignment on these values as an
               organization, we strengthen our foundation and grow with
-              purpose&rdquo;
+              purpose"
             </p>
             <p className="font-family-cera-stencil text-xl">
               - Mr. Ramchand Mohinani, Chairman

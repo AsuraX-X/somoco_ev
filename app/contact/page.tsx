@@ -68,10 +68,7 @@ const ContactUs = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Hours</p>
                   <p className="font-medium">
-                    Mon–Sat · 8:00am–5:00pm{" "}
-                    <span className="font-family-cera-stencil">(</span>Sat
-                    9:00am–2:00pm
-                    <span className="font-family-cera-stencil">)</span>
+                    Mon–Sat · 8:00am–5:00pm (Sat 9:00am–2:00pm )
                   </p>
                 </div>
               </div>
